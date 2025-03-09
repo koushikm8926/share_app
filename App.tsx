@@ -4,7 +4,7 @@ import React from 'react'
 const App = () => {
   return (
     <View style={{backgroundColor:'red'}}>
-      <Text>App</Text>
+      <Text>Apps</Text>
     </View>
   )
 }
