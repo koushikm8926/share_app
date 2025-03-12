@@ -39,7 +39,25 @@
 		<string>_http._tcp</string>
 	</array>
 
-	
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Your apps needs access to doccuments to save files.</string>
+
+	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
+	<string>Your apps needs access to doccuments to save files.</string>
+
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Your apps needs access to doccuments to save files.</string>
+
+	<key>NSCameraUsageDescription</key>
+	<string>${PRODUCT_NAME} needs access to your camera .</string>
+
+	<key>NSMicrophoneUsageDescription</key>
+	<string>${PRODUCT_NAME} needs access to your Microphone .</string>
+
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library, files.</string>
+
+
 
 
 
