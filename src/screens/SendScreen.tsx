@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const   = () => {
+const SendScreen  = () => {
   return (
     <View>
       <Text> </Text>
@@ -9,4 +9,4 @@ const   = () => {
   )
 }
 
-export default  
+export default  SendScreen

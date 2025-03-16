@@ -1,12 +1,12 @@
  import { View, Text } from 'react-native'
  import React from 'react'
  
- const   = () => {
+ const  SplashScreen = () => {
    return (
      <View>
-       <Text> </Text>
+       <Text>Splash Screen </Text>
      </View>
    )
  }
  
- export default  
+ export default  SplashScreen
