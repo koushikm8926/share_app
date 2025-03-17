@@ -12,7 +12,7 @@ interface IconProps{
     iconFamaly:'Ionicons' | 'MaterialCommunityIcons' |'MaterialIcons'
 }
 
-const icon:FC<IconProps> = ({color,size,name,iconFamaly}) => {
+const Icon:FC<IconProps> = ({color,size,name,iconFamaly}) => {
   return (
    <>
    {iconFamaly==="Ionicons" && (
@@ -31,4 +31,4 @@ const icon:FC<IconProps> = ({color,size,name,iconFamaly}) => {
   )
 }
 
-export default icon
+export default Icon

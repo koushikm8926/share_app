@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { Colors, screenHeight, screenWidth } from "../utils/Constants";
 
 export const homeHeaderStyles = StyleSheet.create({
@@ -7,7 +7,9 @@ export const homeHeaderStyles = StyleSheet.create({
     },
     container: {
         padding: 10,
-        zIndex: 4,
+        marginTop: Platform.OS === 'ios' ? 0 : 40 
+       // position: 'absolute',
+        //zIndex: 4,
     },
     curve: {
         position: 'absolute',
