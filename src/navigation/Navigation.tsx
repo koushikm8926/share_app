@@ -6,6 +6,7 @@ import { navigationRef } from '../utils/NavigationUtil';
 import HomeScreen from '../screens/HomeScreen';
 import SendScreen from '../screens/SendScreen';
 import SplashScreen from '../screens/SplashScreen';
+import ConnectionScreen from '../screens/ConnectionScreen';
 
 
 
@@ -19,6 +20,7 @@ const Stack=createNativeStackNavigator();
         <Stack.Screen name='HomeScreen' component={HomeScreen}/>
         <Stack.Screen name='SendScreen' component={SendScreen}/>
         <Stack.Screen name='SplashScreen' component={SplashScreen}/>
+        <Stack.Screen name='ConnectionScreen' component={ConnectionScreen}/>
        </Stack.Navigator>
     </NavigationContainer>
    )
