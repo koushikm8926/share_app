@@ -6,7 +6,7 @@ import { commonStyles } from '../styles/commonStyles'
  const  SplashScreen:FC = () => {
 
   const navigateToHome=()=>{
-    navigate('ConnectionScreen');
+    navigate('HomeScreen');
   }
 
   useEffect(()=>{
