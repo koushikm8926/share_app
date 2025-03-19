@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native';
 import { commonStyles } from '../../styles/commonStyles';
 import { homeHeaderStyles } from '../../styles/homeHeaderStyles';
-import Icon from '../Global/icon';
+import Icon from '../Global/Icon';
 
 
 const HomeHeader = () => {
