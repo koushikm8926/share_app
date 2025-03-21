@@ -7,6 +7,7 @@ import Icon from '../Global/Icon';
 import Svg,{Path, Defs,LinearGradient, Stop  } from 'react-native-svg';
 import { screenHeight, screenWidth, svgPath } from '../../utils/Constants';
 import { Dimensions } from 'react-native';
+import QRGenerateModal from '../modals/QRGenerateModal';
 
 const HomeHeader = () => {
      const [isVisible , setVisible]= useState(false);
@@ -37,6 +38,7 @@ const HomeHeader = () => {
             <Path fill="#80BFFF" d={svgPath}/>
             <Path fill="url(#grad)" d={svgPath}/>
       </Svg>
+      {isVisible && <QRGenerateModal/> }
     </View>
   )
 }
