@@ -25,17 +25,17 @@ const HomeHeader = () => {
 
             <Image style={homeHeaderStyles.logo} source={require('../../assets/images/AppIcon.png')}/>
      
-                <TouchableOpacity onPress={()=>setVisible(true)} style={{ backgroundColor: "red", padding: 10 }} >
+                <TouchableOpacity onPress={()=>setVisible(true)} style={{  padding: 10 }} >
             <Image source={require('../../assets/images/profile.jpg')} style={homeHeaderStyles.profile}/>
             </TouchableOpacity>           
         </View>
 
 
-      <Svg height={screenHeight*0.20} width={screenWidth + 2} viewBox='0 0 1440 20' style={[homeHeaderStyles.curve, { position: "absolute", top: 0, zIndex: -1 }]} pointerEvents="none">
+      <Svg height={screenHeight*0.20} width={screenWidth + 2} viewBox='0 0 1440 20' style={[homeHeaderStyles.curve, ]} pointerEvents="none">
             <Defs>
                 <LinearGradient id='grad' x1="0" y1="0" x2="0" y2='1' >
                     <Stop offset="0%" stopColor="#007AFF" stopOpacity="1" />
-                    <Stop  offset="100%" stopColor="#80BFFF " stopOpacity="1"/> 
+                    <Stop  offset="100%" stopColor="#80BFFF" stopOpacity="1"/> 
                 </LinearGradient>
             </Defs>
             <Path fill="#80BFFF" d={svgPath}/>
