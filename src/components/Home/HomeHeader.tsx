@@ -20,7 +20,7 @@ const HomeHeader = () => {
         <View style={[commonStyles.flexRowBetween, homeHeaderStyles.container]}>
           
             <TouchableOpacity>
-                <Icon iconFamaly="Ionicons" name='menu' size={22} color='#fff'/>
+                <Icon iconFamily="Ionicons" name='menu' size={22} color='#fff'/>
             </TouchableOpacity>
 
             <Image style={homeHeaderStyles.logo} source={require('../../assets/images/AppIcon.png')}/>
@@ -31,7 +31,7 @@ const HomeHeader = () => {
         </View>
 
 
-      <Svg height={screenHeight*0.20} width={screenWidth + 2} viewBox='0 0 1440 20' style={homeHeaderStyles.curve} pointerEvents="none">
+      <Svg height={screenHeight*0.20} width={screenWidth + 2} viewBox='0 0 1440 20' style={[homeHeaderStyles.curve, { position: "absolute", top: 0, zIndex: -1 }]} pointerEvents="none">
             <Defs>
                 <LinearGradient id='grad' x1="0" y1="0" x2="0" y2='1' >
                     <Stop offset="0%" stopColor="#007AFF" stopOpacity="1" />

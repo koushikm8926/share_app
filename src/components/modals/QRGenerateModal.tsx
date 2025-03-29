@@ -1,4 +1,4 @@
-import { View, Text, Modal, } from 'react-native'
+import { View, Modal, ActivityIndicator, TouchableOpacity, } from 'react-native'
 import React, { FC, useEffect, useState } from 'react'
 import { modalStyles } from '../../styles/modalStyles';
 import Animated, { Easing, useSharedValue, useAnimatedStyle, withRepeat, withTiming } from 'react-native-reanimated';
@@ -6,6 +6,10 @@ import Animated, { Easing, useSharedValue, useAnimatedStyle, withRepeat, withTim
 import LinearGradient from 'react-native-linear-gradient';
 import QRCode from 'react-native-qrcode-svg'; 
 import { multiColor } from '../../utils/Constants';
+import CustomText from '../Global/CustomText';
+import Icon from '../Global/Icon';
+
+
 
  
 interface ModalProps {
@@ -64,8 +68,23 @@ const QRGenerateModal:FC <ModalProps> = ({visible , onClose}) => {
              )
           }
       </View>
+<View style={modalStyles.info}>
+      <CustomText style={modalStyles.infoText1}>
+        Ensure you are on the same wifi
+      </CustomText>
+      <CustomText style={modalStyles.infoText2}>
+        ask the sender to scan this QR code to connect and transfer files.
+      </CustomText>
+</View>
+
+<ActivityIndicator size='small' color="#000" style={{alignSelf:'center'}} />
+
+<TouchableOpacity onPress={()=>onClose()} style={modalStyles.closeButton}>
+  <Icon name='close' iconFamily="Ionicons" size={24}  color="#000"/>
+</TouchableOpacity>
+
+
       </View>
-     
     </Modal>
   )
 }

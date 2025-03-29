@@ -9,21 +9,21 @@ interface IconProps{
     color ?: string;
     size:number;
     name:string;
-    iconFamaly:'Ionicons' | 'MaterialCommunityIcons' |'MaterialIcons'
+    iconFamily:'Ionicons' | 'MaterialCommunityIcons' |'MaterialIcons'
 }
 
-const Icon:FC<IconProps> = ({color,size,name,iconFamaly}) => {
+const Icon:FC<IconProps> = ({color,size,name,iconFamily}) => {
   return (
    <>
-   {iconFamaly==="Ionicons" && (
+   {iconFamily==="Ionicons" && (
     <Ionicons name={name} color={color} size={RFValue(size)}  />
    )}
    {
-    iconFamaly==="MaterialCommunityIcons" && (
+    iconFamily==="MaterialCommunityIcons" && (
         <Ionicons name={name} color={color} size={RFValue(size)}  />
     )}
        {
-    iconFamaly==="MaterialIcons" && (
+    iconFamily==="MaterialIcons" && (
         <Ionicons name={name} color={color} size={RFValue(size)}  />
     )}
 
