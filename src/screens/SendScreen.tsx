@@ -4,7 +4,7 @@ import React from 'react'
 const SendScreen  = () => {
   return (
     <View>
-      <Text> </Text>
+      <Text>SendScreen</Text>
     </View>
   )
 }

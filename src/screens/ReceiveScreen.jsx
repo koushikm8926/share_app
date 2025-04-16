@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const SendReceiveButton = () => {
+const ReceiveScreen = () => {
   return (
     <View>
-      <Text>SendReceiveButton</Text>
+      <Text>ReceiveScreen</Text>
     </View>
   )
 }
- 
-export default SendReceiveButton
+
+export default ReceiveScreen

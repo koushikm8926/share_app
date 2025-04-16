@@ -4,7 +4,7 @@ import { commonStyles } from '../styles/commonStyles';
 import HomeHeader from '../components/Home/HomeHeader';
 import Misc from '../components/Home/Misc';
 import Options from '../components/Home/Options';
-import SendReceiveButton from './SendReceiveButton';
+import SendReceiveButton from '../components/Home/SendReceiveButton';
 
 const  HomeScreen:FC = () => {
  

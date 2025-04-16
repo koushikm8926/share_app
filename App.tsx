@@ -6,9 +6,6 @@ import { checkFilePermissions } from './src/utils/libraryHelpers';
 import { Platform } from 'react-native';
 
 
-
-
-
 const App = () => {
 
   useEffect(()=>{

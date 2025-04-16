@@ -73,7 +73,7 @@ const QRGenerateModal:FC <ModalProps> = ({visible , onClose}) => {
         Ensure you are on the same wifi
       </CustomText>
       <CustomText style={modalStyles.infoText2}>
-        ask the sender to scan this QR code to connect and transfer files.
+        Ask the sender to scan this QR code to connect and transfer files.
       </CustomText>
 </View>
 
