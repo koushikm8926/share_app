@@ -1,12 +1,52 @@
-import { View, Text } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
+import CustomText from '../Global/CustomText'
+import { commonStyles } from '../../styles/commonStyles'
+
 
 const Misc = () => {
   return (
-    <View>
-      <Text>Misc</Text>
+    <View style={styles.container}>
+      <CustomText fontSize={13} fontFamily="Okra-Bold" >Explore</CustomText>
+      <Image style={styles.adBanner} source={require('../../assets/images/bannerimage.png')}/>
+
+      <View style={commonStyles.flexRowBetween}>
+        <CustomText fontFamily="Okra-Bold" style={styles.text} fontSize={22}>Connect and share without limits</CustomText>
+        <Image source={require('../../assets/icons/share_logo.jpg')} style={styles.image}/>
+      </View>
+
+      <CustomText fontFamily="Okra-Bold" style={styles.text2}>Made with ❤️ by Koushik</CustomText>
+
+
+
     </View>
   )
 }
 
 export default Misc
+
+const styles = StyleSheet.create({
+  container:{
+    paddingVertical:20,
+  },
+  adBanner:{
+    width:'100%',
+    height:120,
+    resizeMode:'cover',
+    borderRadius:10,
+    marginVertical:25,
+  },
+  text:{
+    opacity:0.5,
+    width:'60%',
+  },
+  text2:{
+     opacity:0.5,
+     marginTop:10,
+  },
+  image:{
+    resizeMode:'contain',
+    height:120,
+    width:'35%',
+  },
+});
