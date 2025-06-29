@@ -12,7 +12,7 @@ const AbsoluteQRBottom = () => {
   return (
     <>
       <View style={bottomTabStyles.container}>
-        <TouchableOpacity onPress={() => navigate('')}>
+        <TouchableOpacity onPress={() => navigate('ReceivedFileScreen')}>
           <Icon
             name="apps-sharp"
             iconFamily="Ionicons"

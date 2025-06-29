@@ -8,6 +8,7 @@ import SendScreen from '../screens/SendScreen';
 import SplashScreen from '../screens/SplashScreen';
 import ConnectionScreen from '../screens/ConnectionScreen';
 import ReceiveScreen from '../screens/ReceiveScreen';
+import ReceivedFileScreen from '../screens/ReceivedFileScreen';
 
 
 
@@ -23,6 +24,7 @@ const Stack=createNativeStackNavigator();
         <Stack.Screen name='SplashScreen' component={SplashScreen}/>
         <Stack.Screen name='ConnectionScreen' component={ConnectionScreen}/>
         <Stack.Screen name='ReceiveScreen' component={ReceiveScreen}/>
+        <Stack.Screen name='ReceivedFileScreen' component={ReceivedFileScreen}/>
        </Stack.Navigator>
     </NavigationContainer>
    )
