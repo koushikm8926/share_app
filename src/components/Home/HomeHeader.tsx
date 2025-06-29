@@ -15,7 +15,7 @@ const HomeHeader = () => {
      const { width: screenWidth } = Dimensions.get('window');
 
   return (
-    <View style={homeHeaderStyles.mainContainer}>
+    <SafeAreaView style={homeHeaderStyles.mainContainer}>
         {/* <SafeAreaView/> */}
 
         <View style={[commonStyles.flexRowBetween, homeHeaderStyles.container]}>
@@ -47,7 +47,7 @@ const HomeHeader = () => {
             <Path fill="url(#grad)" d={svgPath}/>
       </Svg>
       {isVisible && <QRGenerateModal onClose={()=>setVisible(false)} visible={isVisible}/>  }
-    </View>
+    </SafeAreaView>
   )
 }
 

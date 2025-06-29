@@ -9,7 +9,7 @@ export const homeHeaderStyles = StyleSheet.create({
     },
     container: {
         padding: 10,
-        marginTop: Platform.OS === 'ios' ? 0 : 40 
+        marginTop: Platform.OS === 'ios' ? 0 : 0 
        // position: 'absolute',
         //zIndex: 4,
     },

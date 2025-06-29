@@ -4,6 +4,7 @@ import {bottomTabStyles} from '../../styles/bottomTabStyle';
 import Icon from '../Global/Icon';
 import {navigate} from '../../utils/NavigationUtil';
 import ReceiveScreen from '../../screens/ReceiveScreen';
+import QRScannerModal from '../modals/QRScannerModal';
 
 const AbsoluteQRBottom = () => {
   const [isVisible, setVisible] = useState(false);
@@ -35,6 +36,8 @@ const AbsoluteQRBottom = () => {
           />
         </TouchableOpacity>
       </View>
+
+      {isVisible && <QRScannerModal visible={isVisible} onClose={()=> setVisible(false)  }/>}
     </>
   );
 };
