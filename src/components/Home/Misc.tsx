@@ -8,7 +8,7 @@ const Misc = () => {
   return (
     <View style={styles.container}>
       <CustomText fontSize={13} fontFamily="Okra-Bold" >Explore</CustomText>
-      <Image style={styles.adBanner} source={require('../../assets/images/bannerimage.png')}/>
+      <Image style={styles.adBanner} source={require('../../assets/images/banner_image.png')}/>
 
       <View style={commonStyles.flexRowBetween}>
         <CustomText fontFamily="Okra-Bold" style={styles.text} fontSize={22}>Connect and share without limits</CustomText>

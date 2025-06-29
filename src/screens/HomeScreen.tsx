@@ -5,6 +5,7 @@ import HomeHeader from '../components/Home/HomeHeader';
 import Misc from '../components/Home/Misc';
 import Options from '../components/Home/Options';
 import SendReceiveButton from '../components/Home/SendReceiveButton';
+import AbsoluteQRBottom from '../components/Home/AbsoluteQRBottom';
 
 const  HomeScreen:FC = () => {
  
@@ -16,6 +17,8 @@ const  HomeScreen:FC = () => {
     <Options isHome/>
     <Misc/>
     </ScrollView>
+
+    <AbsoluteQRBottom/>
     </View>
   )
 }

@@ -16,19 +16,24 @@ const HomeHeader = () => {
 
   return (
     <View style={homeHeaderStyles.mainContainer}>
-        <SafeAreaView/>
+        {/* <SafeAreaView/> */}
+
         <View style={[commonStyles.flexRowBetween, homeHeaderStyles.container]}>
           
             <TouchableOpacity>
                 <Icon iconFamily="Ionicons" name='menu' size={22} color='#fff'/>
             </TouchableOpacity>
 
-            <Image style={homeHeaderStyles.logo} source={require('../../assets/images/AppIcon.png')}/>
-     
+    <View style={{ marginLeft:37,}}>
+          <Image style={homeHeaderStyles.logo} source={require('../../assets/images/AppIcon.png')}/>
+    </View>
+          
                 <TouchableOpacity onPress={()=>setVisible(true)} style={{  padding: 10 }} >
             <Image source={require('../../assets/images/profile.jpg')} style={homeHeaderStyles.profile}/>
             </TouchableOpacity>           
         </View>
+
+
 
 
       <Svg height={screenHeight*0.20} width={screenWidth + 2} viewBox='0 0 1440 20' style={[homeHeaderStyles.curve, ]} pointerEvents="none">
