@@ -5,7 +5,7 @@ import { Colors, screenHeight, screenWidth } from "../utils/Constants";
 export const homeHeaderStyles = StyleSheet.create({
     mainContainer: {
         backgroundColor: Colors.primary,
-        marginTop: Platform.OS === 'ios' ? 55 : 0 ,
+        marginTop: Platform.OS === 'ios' ? 0 : 0 ,
     },
     container: {
         padding: 10,
