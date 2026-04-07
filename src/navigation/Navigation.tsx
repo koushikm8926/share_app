@@ -9,6 +9,7 @@ import SplashScreen from '../screens/SplashScreen';
 import ConnectionScreen from '../screens/ConnectionScreen';
 import ReceiveScreen from '../screens/ReceiveScreen';
 import ReceivedFileScreen from '../screens/ReceivedFileScreen';
+import { TCPProvider } from '../service/TCPProveder';
 
 
 
@@ -17,6 +18,7 @@ const Stack=createNativeStackNavigator();
 
  const Navigation:FC = () => { 
    return (
+    <TCPProvider>
     <NavigationContainer ref={navigationRef}>
        <Stack.Navigator initialRouteName='SplashScreen' screenOptions={{headerShown:false}}>
         <Stack.Screen name='HomeScreen' component={HomeScreen}/>
@@ -27,6 +29,7 @@ const Stack=createNativeStackNavigator();
         <Stack.Screen name='ReceivedFileScreen' component={ReceivedFileScreen}/>
        </Stack.Navigator>
     </NavigationContainer>
+    </TCPProvider>
    )
  }
  

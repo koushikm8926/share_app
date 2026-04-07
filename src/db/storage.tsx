@@ -4,8 +4,6 @@ export const storage = new mmkv({
     encryptioKey:'some-secret-key'
 })
 
-
-
 export const mmkvStorage={
     setItem(key:string, value:string )=>{
         storage.set(key,value)
